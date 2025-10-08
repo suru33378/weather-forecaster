@@ -52,3 +52,18 @@ Open your browser and navigate to: `http://localhost:3000`
 1. Enter any address in the input field
 2. Click "Get Weather Forecast"
 3. The application will display weather information with coordinates
+
+##unit tests 
+bin/rails test
+
+# Run specific test files
+bin/rails test test/services/geocode_service_test.rb
+bin/rails test test/services/weather_service_test.rb
+bin/rails test test/controllers/forecasts_controller_test.rb
+bin/rails test test/system/forecasts_test.rb
+
+# Run with verbose output
+bin/rails test --verbose
+
+# Run tests in parallel
+bin/rails test --parallel
